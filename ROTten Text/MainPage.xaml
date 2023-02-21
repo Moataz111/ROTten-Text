@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ROTten_Text.MainPage">
+
+    <!--Dropdown menu-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Order="Default" Priority="0"
+                      Clicked="OnQuack"
+                      x:Name="SpDuck"/>
+
+        <ToolbarItem Text="How it works?" Order="Secondary" Priority="1"
+                     Clicked="OnHowItWorks"/>
+
+        <ToolbarItem Text="About" Order="Secondary" Priority="2"
+                     Clicked="OnAbout"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+
+        <Grid Padding="15"
+              RowDefinitions="0.5*, Auto, Auto, 0.5*, Auto"
+              ColumnDefinitions="*, *, *"
+              RowSpacing="3"
+              ColumnSpacing="3">
+
+            <!--A text field to be encrypted/decrypted-->
+            <Editor x:Name="MessageBox"
+                    Grid.Row="0"    Grid.Column="0"    Grid.RowSpan="2"
+                    Margin="5"
+                    Placeholder="Enter your text here (no emojis)"
+                    TextChanged="MessageBoxEncrypt"/>
+
+            <!--Key 1
+            Here is the first key to encrypt or decrypt the text-->
+            <Label Text="Key 1:"
+                   Grid.Row="0"     Grid.Column="1"
+                   HorizontalTextAlignment="End"    VerticalTextAlignment="Center"
+                   FontSize="Body"
+                   Margin="3"/>
+            <Entry 
+                x:Name="FirstKey"
+                Keyboard="Numeric"
+                Grid.Row="0" Grid.Column="2"
+                FontAttributes="Bold"
+                WidthRequest="120"  HeightRequest="80"
+                Margin="3"
+                TextChanged="FrstKey"
+                Placeholder="Max. 65,535"
+                ToolTipProperties.Text="Enter the first key here (choose from 0 to 65,535)"/>
+
+            <!--Key 2
+            Here is the second key to encrypt or decrypt the text-->
+            <Label Text="Key 2:"
+                   Grid.Row="1"     Grid.Column="1"
+                   HorizontalTextAlignment="End"    VerticalTextAlignment="Center"
+                   FontSize="Body"
+                   Margin="3"/>
+            <Entry 
+                x:Name="SecKey"
+                Keyboard="Numeric"
+                WidthRequest="120"  HeightRequest="80"
+                Grid.Row="1"    Grid.Column="2"
+                FontAttributes="Bold"
+                TextChanged="ScndKey"
+                Margin="3"
+                Placeholder="Max. 65,535"
+                ToolTipProperties.Text="Enter the second key here (choose from 0 to 65,535)"/>
+
+            <!--Encryption button-->
+            <Button Text="Encrypt"
+                    x:Name="EncryptBtn"
+                    Grid.Row="2"    Grid.Column="1"
+                    WidthRequest="170"  HeightRequest="100"
+                    HorizontalOptions="End"
+                    Clicked="TxtEncryptBtn"
+                    ToolTipProperties.Text="Click to encrypt the text you entered!"
+                    FontSize="Body"
+                    Margin="3"/>
+
+            <!--Decryption button-->
+            <Button Text="Decrypt"
+                    x:Name="DecryptBtn"
+                    Grid.Row="2"    Grid.Column="2"
+                    WidthRequest="170"  HeightRequest="100"
+                    Clicked="TxtDecryptBtn"
+                    ToolTipProperties.Text="Click to decrypt the text you encrypted!"
+                    FontSize="Body"
+                    Margin="3"/>
+
+            <!-- Results (Encrypted/Decrypted text field)-->
+            <Editor x:Name="ResulTxt"
+                    Grid.Row="3"    Grid.Column="0" Grid.RowSpan="2"
+                    IsReadOnly="True"
+                    Placeholder="The encrypted/decrypted text will be shown here"
+                    AutoSize="TextChanges"
+                    Margin="5"/>
+
+            <!--Copy button-->
+            <Button Text="Copy Result"
+                    Clicked="DecryptedTxtCopy"
+                    x:Name="CopyResults"
+                    Grid.Row="3"    Grid.Column="2"
+                    WidthRequest="170"  HeightRequest="100"
+                    ToolTipProperties.Text="Click to copy the result!"
+                    FontSize="Body"
+                    Margin="3"/>
+
+            <!--Share button-->
+            <Button Text="Share Result"
+                    Clicked="ResultsTxtShare"
+                    x:Name="ShareResults"
+                    Grid.Row="4"     Grid.Column="2"
+                    HeightRequest="100" WidthRequest="170"
+                    ToolTipProperties.Text="Click to share the result!"
+                    FontSize="Body"
+                    Margin="3"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ROTten_Text.HowItWorksPage"
+             Title="How it works?">
+    <VerticalStackLayout Padding="40">
+        <Label 
+            Text="How it works?"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Large"/>
+
+
+        <Label FontSize="Medium"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Start">
+            <Label.Text>
+                To encrypt/decrypt a text:
+                
+                1. Write something in the entry field.
+                
+                2. Enter the first and the second keys.
+                
+                    - Each key should be from 0 to 65,535.
+                    - Also, make sure that the sum of keys 1 and 2 doesn't exceed 65,535.
+                
+                3. Hit the Encrypt/Decrypt button.
+                
+                4. You can copy or share the result by clicking on the Copy or Share buttons.
+            </Label.Text>
+        </Label>
+
+        <Button Text="Got it!"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Clicked="GotItBtn"/>
+    </VerticalStackLayout>
+</ContentPage>
