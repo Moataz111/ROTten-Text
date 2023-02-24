@@ -20,8 +20,8 @@ public partial class MainPage : ContentPage
     async void OnAbout(object sender, EventArgs e)
     {
         string AppVersion = AppInfo.Current.VersionString;
-        await DisplayAlert("About", "Version " + AppVersion + "\r\n\nROTten Text is a simple open-source app that encrypts/decrypts texts using the ROT method (rotate by fixed numbers of characters) with a tiny touch of mine.\n\n" +
-            "This app is licensed under GNU GPL v. 3.\r\n" +
+        await DisplayAlert("About", "Version " + AppVersion + "\r\n\nROTten Text is a simple open-source app that encrypts/decrypts texts using the ROT method (rotate by fixed numbers of characters).\n\n" +
+            "This app is licensed under GNU GPL v3.\r\n" +
             "The source code can be accessed on GitHub.\r\n\n" +
             "\nBy Moataz ZS. 🦆", "OK");
     }
