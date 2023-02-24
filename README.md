@@ -5,7 +5,7 @@ _ROTten Text_ is a simple .NET MAUI app that allows users to encrypt and decrypt
 # Installation
 To run the app on your local machine, you will need to have Visual Studio 2022 and the .NET 7 SDK installed. Once you have those installed, you can clone this repository and open the solution file in Visual Studio. From there, you can build and run the app on your local machine.
 
-# Usage
+# How it works?
 To use _ROTten Text_, firstly enter the text you want to encrypt or decrypt in the input field, choose the rotation number (i.e enter the first and second keys), and click the "Encrypt" or "Decrypt" button. The output will be displayed in the output field. You can also click the Copy or Share buttons to copy or share the result.
 
 # Contributing
