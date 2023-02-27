@@ -100,7 +100,7 @@ public partial class MainPage : ContentPage
 
         int TxtEncCharUni, KeysNText;
         string[] TxtToEncStringsArray = TextForEncDec.Select(c => c.ToString()).ToArray(); //Converts 'TextForEncDec' into an array of strings
-                                                                                           //Could be optimized, but I'm too lazy to think :P ||Known issues: Not really an issue, but when calling 'TxtToEncStringsArray' on a string containing an emoji, it will only return the first code unit of the surrogate pair, which is called a "high surrogate". Converting such characters to a different encoding, such as UTF-8 or UTF-32, can cause such issues.
+                                                                                           //Could be optimized, but I'm too lazy to think :P | Known issues: Not really an issue, but when calling 'TxtToEncStringsArray' on a string containing an emoji, it will only return a high surrogate. Converting such characters to a different encoding can cause such issues.
         string[] EncryptedTxtStringsArray = new string[TxtToEncStringsArray.Length]; //Used to store the encrypted text
 
         for (int i = 0; i < TxtToEncStringsArray.Length; i++)

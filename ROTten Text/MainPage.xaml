@@ -91,7 +91,6 @@
              <!--Results (Encrypted/Decrypted text field)-->
             <Editor x:Name="ResulTxt"
                     Grid.Row="5"    Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"
-                    
                     IsReadOnly="True"
                     Placeholder="The encrypted/decrypted text will be shown here"
                     AutoSize="TextChanges"

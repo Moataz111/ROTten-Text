@@ -15,7 +15,7 @@
 		<ApplicationTitle>ROTten Text</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.rotten_text</ApplicationId>
+		<ApplicationId>com.techietaz.rotten_text</ApplicationId>
 		<ApplicationIdGuid>6bdc0a5e-e3e2-473d-9b20-ac3c2623c1d2</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-    <MauiIcon Include="Resources\AppIcon\svgicon.svg" Color="ddeeee" />
+    <MauiIcon Include="Resources\AppIcon\svgicon.svg" Color="ddeeee" BaseSize="256,512"/>
     
 		<!-- Splash Screen -->
-    <MauiSplashScreen Include="Resources\Splash\svgsplash.svg" Color="ddeeee"/>
+    <MauiSplashScreen Include="Resources\Splash\svgsplash.svg" Color="ddeeee" />
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 
