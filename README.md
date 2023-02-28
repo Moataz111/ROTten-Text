@@ -1,5 +1,6 @@
-# ROTten Text
+<img src="https://github.com/Moataz111/ROTten-Text/blob/master/ROTten%20Text/Resources/Splash/svgsplash.svg"/>
 
+# ROTten Text
 _ROTten Text_ is a simple .NET MAUI app that allows users to encrypt and decrypt texts using the ROT (Rotation by fixed numbers of characters) cipher method.
 
 # Installation
