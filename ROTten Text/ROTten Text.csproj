@@ -35,7 +35,7 @@
 		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
 		<AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
-		<AppInstallerUri>https://github.com/Moataz111/ROTten-Text/tree/master/Windows</AppInstallerUri>
+		<AppInstallerUri>C:\Users\mzsha\Documents\.NET MAUI Projects\ROTten Text\ROTten Text\bin\Release\net7.0-windows10.0.19041.0\win10-x64\publish</AppInstallerUri>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 		<DefaultLanguage>en</DefaultLanguage>
 	</PropertyGroup>
@@ -54,10 +54,6 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Remove="Resources\Splash\rottentextsplashpng.png" />
 	</ItemGroup>
 
 	<ItemGroup>
