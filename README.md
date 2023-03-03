@@ -5,9 +5,9 @@
 _ROTten Text_ is a simple .NET MAUI app that allows users to encrypt and decrypt texts using the ROT (Rotation by fixed numbers of characters) cipher method.
 
 # Installation
-**Android:** You can download the Android app directly from [here](https://github.com/Moataz111/ROTten-Text/blob/master/Android/ROTten%20Text.apk) (I love side-loading apps too ;)). There are plans to publish it on Google Play Store.
+**Android:** You can download the Android app directly from [here](https://github.com/Moataz111/ROTten-Text/blob/master/Android/ROTten%20Text.apk) (I love side-loading apps too ;)). There are plans to publish it on Google Play Store in the future.
 
-**Windows:** You can download the Windows app directly from here (side-loading is <3). There are plans to publish it on Microsoft Store soon.
+**Windows:** You can download the Windows app directly from [here](https://github.com/Moataz111/ROTten-Text/blob/master/Windows/ROTten%20Text_1.0.7.0_x86.msix) (side-loading is <3). There are plans to publish it on Microsoft Store in the future.
 
 Alternatively, to run the app on your local machine, you will need to have Visual Studio 2022 and the .NET 7 SDK installed. Once you have those installed, you can clone this repository and open the solution file in Visual Studio. From there, you can build and run the app on your local machine.
 
