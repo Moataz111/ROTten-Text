@@ -12,7 +12,7 @@ Android (Light Mode):
 <br /><br />
 Windows (Dark Mode):
 
-<img src="https://github.com/Moataz111/ROTten-Text/blob/master/Screenshots/Windows.jpg" title="Android Phone" width=75%/>
+<img src="https://github.com/Moataz111/ROTten-Text/blob/master/Screenshots/Windows.jpg" title="Windows" width=75%/>
 
 The app is adaptive to the system theme.
 
